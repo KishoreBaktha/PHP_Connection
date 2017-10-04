@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.kishorebaktha.assignment.MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:text="             WELCOME ADMIN!"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:onClick="insert"
+        android:text="INSERT"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Update"
+        android:layout_below="@+id/Insert"
+        android:layout_marginTop="18dp"
+        android:onClick="delete"
+        android:text="DELETE"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Insert"
+        android:layout_centerVertical="true"
+        android:onClick="update"
+        android:text="UPDATE"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Update"
+        android:layout_below="@+id/Update"
+        android:layout_marginTop="28dp"
+        android:onClick="view"
+        android:text="VIEW"
+        android:textColor="@color/colorPrimaryDark" />
+
+</RelativeLayout>
